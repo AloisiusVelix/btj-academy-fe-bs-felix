@@ -63,7 +63,7 @@ Program ini merupakan halaman web sederhana yang dibuat menggunakan HTML. Halama
     -   Klik tautan "Work Experience" untuk menuju ke bagian "Work Experience".
 
 # Styling CSS yang Digunakan
-Program ini memanfaatkan framework bootstrap untuk melakukan styling pada setiap elemennya dan terdapat beberapa CSS Style yang diterapkan untuk mendukung ukuran, animasi dan transisi pada elemen
+Program ini memanfaatkan framework **Bootstrap** untuk melakukan styling pada setiap elemennya dan terdapat beberapa CSS Style yang diterapkan untuk mendukung ukuran, animasi dan transisi pada elemen.
 
 # Fungsi Script yang Digunakan
 Script JavaScript (`script.js`) yang digunakan telah dimodifikasi menggunakan library JQuery
