@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Landing Page</title>
+        <link rel="stylesheet" href="style.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    </head>
+    <body class="bg-dark">
+        <div class="d-flex flex-column rounded bg-black text-light m-4 min-vh-100 justify-content-between">
+            <header>    
+                <nav class="navbar navbar-expand-md px-5 my-2">
+                    <div class="d-flex align-items-center gap-3">
+                        <img id="logo" src="logo-zaga.png" width="40" onclick="rotateImage()">
+                        <h1 class="text-primary">Welcome</h1>
+                    </div>
+                    <a class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                        <span class="bi bi-list text-light fs-1 m-2"></span>
+                    </a>
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                        <div class="d-flex gap-3 flex-column flex-md-row mt-md-0 mt-3 ">
+                            <a class="btn btn-outline-primary px-3" href="index.html">Home</a>
+                            <a class="btn btn-outline-primary px-3" href="about.html">About</a>
+                        </div>
+                    </div>
+                </nav>
+            </header>
+    
+            <main class="landing-page d-flex flex-column flex-md-row justify-content-between align-items-center p-5 gap-3">
+                <section id="login" class="p-5 bg-dark rounded text-light">
+                    <h2>Welcome to Our Landing Page</h2>
+                    <p>Please login to access other features.</p>
+                    <form id="login-form" class="d-flex flex-column gap-3">
+                        <div class="username">
+                            <label for="username" class="form-label">Username: </label>
+                            <input type="text" id="username" class="form-control" placeholder="Enter your username" oninput="validateUsername()">
+                            <span id="errorUsername" class="badge form-text text-danger w-100 text-wrap text-start p-0"></span>
+                        </div>
+    
+                        <div class="password">
+                            <label for="pass" class="form-label">Password: </label>
+                            <input type="password" id="pass" class="form-control" placeholder="Enter your password" oninput="validatePass()">
+                            <span id="errorPassword" class="badge form-text text-danger w-100 text-wrap text-start p-0"></span>
+                            <div class="message text-primary">
+                                <span id="capslock-allert"></span>
+                            </div>
+                        </div>
+    
+                        <div class="showPass mb-3">
+                            <input type="checkbox" id="showPassword">
+                            <label for="showPassword">Show Password</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Login</button>
+                    </form>
+                </section>
+    
+                <section class="content text-center">
+                    <figure>
+                        <img src="logo-zaga.png" class="img-fluid" width="250vw">
+                    </figure>
+        
+                    <article class="quotes">
+                        <p>"Don't Think, Just Do." - 7th era</p>
+                    </article>
+                </section>
+            </main>
+
+            <footer class="text-center p-3">
+                &copy; 2023 BTJ Academy
+            </footer>
+        </div>        
+
+        <script src="script.js"></script>
+    </body>
+</html>
