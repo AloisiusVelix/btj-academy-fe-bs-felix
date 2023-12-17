@@ -62,7 +62,7 @@ Program ini merupakan halaman web sederhana yang dibuat menggunakan HTML. Halama
     -   Klik tautan "Education" untuk menuju ke bagian "Education".
     -   Klik tautan "Work Experience" untuk menuju ke bagian "Work Experience".
 
-# Styling CSS yang Digunakan
+# Styling dengan Bootstrap Framework
 Program ini memanfaatkan framework **Bootstrap** untuk melakukan styling pada setiap elemennya dan terdapat beberapa CSS Style yang diterapkan untuk mendukung ukuran, animasi dan transisi pada elemen.
 
 # Fungsi Script yang Digunakan
